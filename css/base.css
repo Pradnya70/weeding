@@ -1,0 +1,213 @@
+/* =====================================================================
+   BASE — design tokens, typography, layout primitives, buttons,
+   the shared photo-fallback system, and scroll-reveal animations.
+   Loaded first; every other stylesheet builds on this one.
+   ===================================================================== */
+
+:root {
+  --ivory: #fbf6ef;
+  --cream: #f6ecdf;
+  --blush: #f3ddd9;
+  --champagne: #e8c9a0;
+  --gold: #bd8f4e;
+  --gold-light: #d9b475;
+  --maroon: #6e1423;
+  --maroon-deep: #4a0d18;
+  --charcoal: #2a2320;
+  --ink: #3a2e28;
+  --white: #ffffff;
+
+  --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Poppins', 'Segoe UI', sans-serif;
+  --font-script: 'Great Vibes', cursive;
+
+  --shadow-soft: 0 20px 60px rgba(74, 13, 24, 0.12);
+  --shadow-deep: 0 30px 80px rgba(0, 0, 0, 0.35);
+
+  --ease: cubic-bezier(.22, 1, .36, 1);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--ivory);
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+img { max-width: 100%; display: block; }
+
+h1, h2, h3 { font-family: var(--font-serif); margin: 0; }
+p { margin: 0; }
+
+.serif { font-family: var(--font-serif); }
+
+/* ---------- Layout primitives ---------- */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.container.narrow { max-width: 780px; }
+.container.center { text-align: center; }
+
+.section {
+  position: relative;
+  padding: 120px 0;
+}
+.dark-section {
+  background: linear-gradient(180deg, var(--maroon-deep), var(--charcoal));
+  color: var(--cream);
+}
+
+/* ---------- Shared section typography ---------- */
+.section-kicker {
+  font-family: var(--font-body);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.section-kicker.center { text-align: center; }
+.section-kicker.light { color: var(--gold-light); }
+
+.section-heading {
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-weight: 600;
+  color: var(--maroon);
+  line-height: 1.25;
+  margin-bottom: 24px;
+}
+.section-heading.center { text-align: center; }
+.section-heading.light { color: var(--ivory); }
+
+.section-subheading {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+.section-subheading.light { color: var(--champagne); }
+
+.section-text {
+  font-size: 1.05rem;
+  color: #5a4c43;
+  margin-bottom: 12px;
+}
+.section-text.light { color: #e5d8ce; }
+
+.story-caption {
+  font-family: var(--font-script);
+  font-size: 1.8rem;
+  color: var(--gold);
+  margin-top: 20px;
+}
+
+.quote-text {
+  font-family: var(--font-script);
+  font-size: 2.2rem;
+  color: var(--gold-light);
+  margin-top: 32px;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 15px 38px;
+  border-radius: 40px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), background 0.35s var(--ease);
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  color: var(--maroon-deep);
+  box-shadow: 0 10px 30px rgba(189, 143, 78, 0.35);
+}
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(189, 143, 78, 0.45); }
+
+.btn-outline-light {
+  background: transparent;
+  color: var(--ivory);
+  border: 1px solid rgba(255,255,255,0.5);
+  margin: 30px 0 10px;
+}
+.btn-outline-light:hover { background: rgba(255,255,255,0.1); transform: translateY(-3px); }
+
+/* =====================================================================
+   PHOTO FALLBACKS (shown automatically if a real photo file is missing)
+   Used by hero, first-meeting, letter, careers, wedding, family, gallery.
+   ===================================================================== */
+.photo-fallback {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background: linear-gradient(135deg, var(--blush), var(--champagne) 45%, var(--gold) 100%);
+  color: var(--maroon-deep);
+  text-align: center;
+}
+.photo-fallback.show { display: flex; }
+
+.fallback-monogram {
+  font-family: var(--font-script);
+  font-size: clamp(3rem, 8vw, 6rem);
+  color: rgba(74,13,24,0.55);
+}
+.fallback-monogram span { padding: 0 12px; }
+.fallback-icon { width: 56px; height: 56px; opacity: 0.6; }
+.fallback-icon svg { width: 100%; height: 100%; }
+.letter-fallback p {
+  font-family: var(--font-script);
+  font-size: 1.4rem;
+  color: rgba(74,13,24,0.6);
+}
+
+/* =====================================================================
+   SCROLL REVEAL ANIMATIONS
+   ===================================================================== */
+.reveal-up, .reveal-left, .reveal-right {
+  opacity: 0;
+  transition: opacity 0.9s var(--ease), transform 0.9s var(--ease);
+}
+.reveal-up { transform: translateY(36px); }
+.reveal-left { transform: translateX(-40px); }
+.reveal-right { transform: translateX(40px); }
+.reveal-up.in-view, .reveal-left.in-view, .reveal-right.in-view {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* =====================================================================
+   RESPONSIVE — shared
+   ===================================================================== */
+@media (max-width: 720px) {
+  .section { padding: 80px 0; }
+}
+
+/* =====================================================================
+   REDUCED MOTION
+   ===================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal-up, .reveal-left, .reveal-right { opacity: 1; transform: none; }
+}

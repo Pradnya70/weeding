@@ -1,0 +1,53 @@
+/* =====================================================================
+   SECTION 7 — OUR STORY, MOMENT BY MOMENT (vertical timeline)
+   ===================================================================== */
+.timeline-section { background: var(--cream); }
+.vertical-timeline {
+  position: relative;
+  margin-top: 70px;
+  padding-left: 40px;
+}
+.vertical-timeline::before {
+  content: "";
+  position: absolute;
+  left: 11px; top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(var(--gold-light), var(--maroon));
+  opacity: 0.4;
+}
+.tl-item {
+  position: relative;
+  padding-bottom: 54px;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+}
+.tl-item.in-view { opacity: 1; transform: translateX(0); }
+.tl-item:last-child { padding-bottom: 0; }
+.tl-dot {
+  position: absolute;
+  left: -40px; top: 2px;
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 2px solid var(--gold);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--maroon);
+  z-index: 2;
+}
+.tl-dot svg { width: 12px; height: 12px; }
+.tl-period {
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.tl-title { font-family: var(--font-serif); font-size: 1.3rem; color: var(--maroon); margin-bottom: 8px; }
+.tl-text { color: #6b5c52; font-size: 0.95rem; max-width: 560px; }
+
+@media (max-width: 720px) {
+  .vertical-timeline { padding-left: 30px; }
+  .tl-dot { left: -30px; }
+}

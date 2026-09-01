@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a0d18"/>
+      <stop offset="45%" stop-color="#6e1423"/>
+      <stop offset="100%" stop-color="#c8923f"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f6dfae" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#d9b475" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#d9b475" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ground" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1c0509" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#1c0509" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vignette" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c0509" stop-opacity="0.35"/>
+      <stop offset="20%" stop-color="#1c0509" stop-opacity="0"/>
+      <stop offset="75%" stop-color="#1c0509" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#1c0509" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <rect width="1920" height="1080" fill="url(#vignette)"/>
+
+  <!-- glowing sun behind the couple -->
+  <circle cx="960" cy="470" r="260" fill="url(#sun)"/>
+  <circle cx="960" cy="470" r="120" fill="#f3e2bb" opacity="0.85"/>
+
+  <!-- distant birds -->
+  <g stroke="#2a0c12" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.5">
+    <path d="M300 200q18-16 36 0q18-16 36 0"/>
+    <path d="M420 260q14-13 28 0q14-13 28 0"/>
+    <path d="M1500 180q18-16 36 0q18-16 36 0"/>
+    <path d="M1580 240q14-13 28 0q14-13 28 0"/>
+  </g>
+
+  <!-- floating petals -->
+  <g fill="#e8c9a0" opacity="0.55">
+    <ellipse cx="220" cy="420" rx="10" ry="6" transform="rotate(35 220 420)"/>
+    <ellipse cx="1720" cy="500" rx="10" ry="6" transform="rotate(-20 1720 500)"/>
+    <ellipse cx="180" cy="760" rx="9" ry="5" transform="rotate(60 180 760)"/>
+    <ellipse cx="1760" cy="820" rx="9" ry="5" transform="rotate(-45 1760 820)"/>
+    <ellipse cx="330" cy="900" rx="8" ry="5" transform="rotate(10 330 900)"/>
+    <ellipse cx="1620" cy="920" rx="8" ry="5" transform="rotate(-10 1620 920)"/>
+  </g>
+
+  <!-- ground shadow -->
+  <ellipse cx="960" cy="1000" rx="300" ry="34" fill="url(#ground)"/>
+
+  <!-- ===================== COUPLE (viewed from behind) ===================== -->
+  <g fill="#1c070c">
+
+    <!-- Groom -->
+    <g>
+      <!-- back leg / trailing coat hem -->
+      <path d="M812 900 L800 1000 L836 1000 L842 900 Z"/>
+      <path d="M900 900 L906 1000 L942 1000 L928 900 Z"/>
+      <!-- sherwani coat -->
+      <path d="M796 630
+               C792 600 828 578 862 578
+               C896 578 934 600 930 630
+               L940 890
+               C900 912 822 912 786 890
+               Z"/>
+      <!-- back centre slit -->
+      <path d="M862 700 L858 890" stroke="#4a0d18" stroke-width="3" fill="none" opacity="0.5"/>
+      <!-- shoulder drape / stole -->
+      <path d="M804 610 C 800 660 806 720 818 760 L 836 754 C 826 712 822 656 828 612 Z" fill="#3a0e17" opacity="0.85"/>
+      <!-- neck -->
+      <rect x="846" y="556" width="30" height="26" rx="8"/>
+      <!-- head -->
+      <circle cx="861" cy="530" r="34"/>
+      <!-- arm reaching to clasp hands -->
+      <path d="M924 636 C 946 660 958 690 958 718 L 940 728 C 936 698 924 672 906 652 Z"/>
+    </g>
+
+    <!-- pagdi / turban, sits above the head so it doesn't merge into one blob -->
+    <g fill="#2c0b12" stroke="#e8c9a0" stroke-width="1.2" stroke-opacity="0.4">
+      <path d="M818 502
+               C 812 458 912 458 906 502
+               C 908 516 895 526 880 528
+               C 872 522 850 522 842 528
+               C 827 526 816 516 818 502 Z"/>
+      <path d="M894 470 C 918 458 934 470 930 486 C 926 500 908 500 900 490 Z"/>
+    </g>
+    <!-- turban wrap folds -->
+    <g stroke="#e8c9a0" stroke-width="1.5" fill="none" opacity="0.4">
+      <path d="M824 488 C 848 478 874 478 900 488"/>
+      <path d="M822 500 C 848 512 874 512 902 500"/>
+    </g>
+    <!-- Bride -->
+    <g fill="#1c070c">
+      <!-- saree hem -->
+      <path d="M964 1000
+               C 964 862 986 706 1026 630
+               C 1088 626 1128 700 1138 794
+               C 1146 862 1140 934 1128 1000
+               C 1074 1022 1014 1022 964 1000 Z"/>
+      <!-- saree hem border -->
+      <path d="M980 980 C 1044 1000 1098 1000 1128 978" stroke="#d9b475" stroke-width="5" fill="none" opacity="0.8"/>
+      <!-- neck -->
+      <rect x="1044" y="560" width="26" height="22" rx="8"/>
+      <!-- head -->
+      <circle cx="1058" cy="530" r="32"/>
+    </g>
+    <!-- pallu drape over shoulder, slightly lighter so it reads as a separate layer -->
+    <path d="M1030 618 C 1010 660 1000 718 1006 786 C 1010 834 1022 882 1042 920
+             C 1056 892 1060 844 1054 796 C 1048 728 1046 668 1056 622 Z"
+          fill="#33101a" opacity="0.95"/>
+    <path d="M1014 688 C 1022 736 1026 786 1030 830" stroke="#d9b475" stroke-width="3" fill="none" opacity="0.7"/>
+    <path d="M1008 756 C 1016 796 1022 836 1028 872" stroke="#d9b475" stroke-width="3" fill="none" opacity="0.55"/>
+    <!-- hair bun, offset below/behind the head -->
+    <circle cx="1060" cy="562" r="18" fill="#2c0b12" stroke="#e8c9a0" stroke-width="1" stroke-opacity="0.4"/>
+    <!-- gajra flowers wrapped around the bun -->
+    <g fill="#f3e2bb" opacity="0.95">
+      <circle cx="1041" cy="556" r="3.2"/>
+      <circle cx="1046" cy="570" r="3.2"/>
+      <circle cx="1057" cy="578" r="3.2"/>
+      <circle cx="1070" cy="572" r="3.2"/>
+      <circle cx="1077" cy="558" r="3.2"/>
+      <circle cx="1070" cy="546" r="3.2"/>
+    </g>
+    <!-- arm reaching to clasp hands -->
+    <path d="M1006 636 C 986 660 972 690 972 718 L 990 730 C 994 698 1006 672 1024 652 Z" fill="#1c070c"/>
+
+    <!-- clasped hands -->
+    <ellipse cx="964" cy="726" rx="20" ry="14" transform="rotate(-18 964 726)" fill="#1c070c"/>
+
+    <!-- soft rim-light along the outer silhouette, catching the sunset glow -->
+    <g fill="none" stroke="#f6dfae" stroke-width="2.5" stroke-linejoin="round" opacity="0.3">
+      <path d="M796 630 C792 600 828 578 862 578 C896 578 934 600 930 630 L940 890"/>
+      <path d="M964 1000 C 964 862 986 706 1026 630 C 1088 626 1128 700 1138 794 C 1146 862 1140 934 1128 1000"/>
+    </g>
+  </g>
+
+  <!-- corner flourishes -->
+  <g stroke="#e8c9a0" stroke-width="2" fill="none" opacity="0.5">
+    <path d="M50 60 C 90 40 130 40 150 70 M 50 60 C 60 90 60 120 90 140"/>
+    <path d="M1870 60 C 1830 40 1790 40 1770 70 M 1870 60 C 1860 90 1860 120 1830 140"/>
+    <path d="M50 1020 C 90 1040 130 1040 150 1010 M 50 1020 C 60 990 60 960 90 940"/>
+    <path d="M1870 1020 C 1830 1040 1790 1040 1770 1010 M 1870 1020 C 1860 990 1860 960 1830 940"/>
+  </g>
+
+  <!-- thin inset frame -->
+  <rect x="18" y="18" width="1884" height="1044" fill="none" stroke="#e8c9a0" stroke-opacity="0.35" stroke-width="1.5"/>
+
+  <text x="960" y="1050" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="20" letter-spacing="2" fill="#f3e2bb" opacity="0.6">Dummy placeholder — replace with your own photo</text>
+</svg>

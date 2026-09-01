@@ -1,0 +1,45 @@
+/* =====================================================================
+   SECTION 11 — RSVP
+   ===================================================================== */
+.rsvp-section { background: var(--cream); }
+.rsvp-form {
+  margin-top: 40px;
+  background: var(--white);
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: var(--shadow-soft);
+  text-align: left;
+}
+.form-row { margin-bottom: 22px; }
+.form-row label { display: block; font-size: 0.85rem; color: var(--maroon); margin-bottom: 8px; font-weight: 500; }
+.form-row input, .form-row textarea {
+  width: 100%;
+  padding: 13px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--champagne);
+  background: var(--ivory);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--ink);
+  transition: border 0.3s;
+}
+.form-row input:focus, .form-row textarea:focus { outline: none; border-color: var(--gold); }
+.attend-toggle { display: flex; gap: 12px; flex-wrap: wrap; }
+.attend-toggle input { position: absolute; opacity: 0; pointer-events: none; }
+.toggle-pill {
+  padding: 12px 22px;
+  border-radius: 30px;
+  border: 1px solid var(--champagne);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s var(--ease);
+  color: var(--ink);
+}
+.attend-toggle input:checked + .toggle-pill.toggle-yes { background: var(--gold); color: var(--white); border-color: var(--gold); }
+.attend-toggle input:checked + .toggle-pill.toggle-no { background: var(--maroon); color: var(--white); border-color: var(--maroon); }
+.rsvp-submit { width: 100%; text-align: center; margin-top: 6px; }
+.rsvp-success { margin-top: 16px; text-align: center; color: var(--maroon); font-weight: 500; min-height: 1.2em; }
+
+@media (max-width: 720px) {
+  .rsvp-form { padding: 26px 20px; }
+}

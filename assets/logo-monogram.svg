@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d9b475"/>
+      <stop offset="50%" stop-color="#bd8f4e"/>
+      <stop offset="100%" stop-color="#d9b475"/>
+    </linearGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6e1423"/>
+      <stop offset="100%" stop-color="#4a0d18"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="60" cy="60" r="57" fill="url(#faceGrad)" stroke="url(#ringGrad)" stroke-width="2.5"/>
+  <circle cx="60" cy="60" r="48" fill="none" stroke="#e8c9a0" stroke-width="1" opacity="0.55"/>
+
+  <!-- top flourish -->
+  <path d="M60 15 C 54 20 46 20 42 15 M60 15 C 66 20 74 20 78 15" stroke="#e8c9a0" stroke-width="1.4" fill="none" opacity="0.8" stroke-linecap="round"/>
+  <circle cx="60" cy="13" r="2" fill="#e8c9a0" opacity="0.9"/>
+
+  <!-- bottom flourish -->
+  <path d="M60 105 C 54 100 46 100 42 105 M60 105 C 66 100 74 100 78 105" stroke="#e8c9a0" stroke-width="1.4" fill="none" opacity="0.8" stroke-linecap="round"/>
+  <circle cx="60" cy="107" r="2" fill="#e8c9a0" opacity="0.9"/>
+
+  <!-- interlocked monogram -->
+  <text x="46" y="79" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="700" font-size="56" fill="#f3e2bb">V</text>
+  <text x="76" y="79" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="700" font-size="56" fill="#fbf6ef">P</text>
+
+  <!-- small ampersand joining the two letters -->
+  <circle cx="61" cy="66" r="9" fill="url(#faceGrad)" stroke="#e8c9a0" stroke-width="1"/>
+  <text x="61" y="70" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="12" fill="#d9b475">&amp;</text>
+</svg>

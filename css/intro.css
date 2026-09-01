@@ -1,0 +1,35 @@
+/* =====================================================================
+   SECTION 1 — ARRANGED INTRODUCTION
+   ===================================================================== */
+.mini-timeline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 50px;
+}
+.mini-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  min-width: 90px;
+}
+.mini-icon {
+  width: 54px; height: 54px;
+  border-radius: 50%;
+  background: var(--cream);
+  border: 1px solid var(--champagne);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--maroon);
+  transition: transform 0.4s var(--ease), background 0.4s var(--ease);
+}
+.mini-icon svg { width: 24px; height: 24px; }
+.mini-step:hover .mini-icon { transform: translateY(-6px) scale(1.08); background: var(--gold-light); }
+.mini-step span { font-size: 0.8rem; color: var(--ink); letter-spacing: 0.5px; }
+.mini-connector {
+  width: 40px; height: 1px;
+  background: var(--champagne);
+  margin-bottom: 26px;
+}

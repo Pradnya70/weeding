@@ -1,0 +1,148 @@
+/* =====================================================================
+   NAVIGATION, MUSIC CONTROL, SCROLL PROGRESS, FLOATING PETALS
+   ===================================================================== */
+
+.petals-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 40;
+  overflow: hidden;
+}
+.petal {
+  position: absolute;
+  top: -40px;
+  font-size: 18px;
+  opacity: 0.8;
+  will-change: transform;
+  animation: petal-fall linear infinite;
+  color: var(--gold);
+}
+@keyframes petal-fall {
+  to { transform: translateY(110vh) translateX(var(--drift, 40px)) rotate(360deg); }
+}
+
+.scroll-progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--gold), var(--maroon));
+  z-index: 100;
+  transition: width 0.1s linear;
+}
+
+.music-control {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 40px;
+  border: 1px solid var(--gold);
+  background: rgba(251, 246, 239, 0.92);
+  backdrop-filter: blur(6px);
+  color: var(--maroon);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.3s var(--ease);
+}
+.music-control:hover { transform: scale(1.05); }
+.music-control.playing .music-icon { animation: spin-note 2s linear infinite; }
+@keyframes spin-note { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+
+.site-nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 32px;
+  background: transparent;
+  transition: background 0.4s var(--ease), padding 0.4s var(--ease), box-shadow 0.4s var(--ease);
+}
+.site-nav.scrolled {
+  background: rgba(251, 246, 239, 0.92);
+  backdrop-filter: blur(8px);
+  padding: 12px 32px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  line-height: 0;
+}
+.nav-logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.35);
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
+}
+.nav-brand:hover .nav-logo { transform: scale(1.06); box-shadow: 0 6px 20px rgba(0,0,0,0.4); }
+.site-nav.scrolled .nav-logo { width: 40px; height: 40px; box-shadow: 0 3px 10px rgba(0,0,0,0.18); }
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+.nav-links a {
+  color: var(--ivory);
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: color 0.4s var(--ease), opacity 0.2s;
+  opacity: 0.9;
+}
+.nav-links a:hover { opacity: 1; color: var(--gold-light); }
+.site-nav.scrolled .nav-links a { color: var(--ink); }
+.site-nav.scrolled .nav-links a:hover { color: var(--maroon); }
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+.nav-toggle span {
+  width: 24px;
+  height: 2px;
+  background: var(--ivory);
+  transition: background 0.3s;
+}
+.site-nav.scrolled .nav-toggle span { background: var(--maroon); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 720px) {
+  .nav-links {
+    position: fixed;
+    top: 0; right: 0;
+    height: 100vh;
+    width: 78%;
+    max-width: 320px;
+    background: var(--ivory);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 26px;
+    transform: translateX(100%);
+    transition: transform 0.4s var(--ease);
+    box-shadow: -10px 0 40px rgba(0,0,0,0.15);
+  }
+  .nav-links.open { transform: translateX(0); }
+  .nav-links a { color: var(--ink); font-size: 1.1rem; }
+  .nav-toggle { display: flex; }
+  .music-control { bottom: 16px; right: 16px; padding: 10px 14px; }
+  .music-label { display: none; }
+}

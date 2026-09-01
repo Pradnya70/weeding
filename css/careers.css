@@ -1,0 +1,44 @@
+/* =====================================================================
+   SECTION 6 — TWO CAREERS, ONE JOURNEY
+   ===================================================================== */
+.careers-section { background: var(--ivory); }
+.profile-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+.profile-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 40px 34px;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+  width: 320px;
+  transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
+}
+.profile-card:hover { transform: translateY(-10px); box-shadow: 0 30px 70px rgba(74,13,24,0.16); }
+.profile-photo-wrap {
+  width: 140px; height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 24px;
+  border: 4px solid var(--champagne);
+}
+.profile-photo, .profile-fallback { width: 100%; height: 100%; object-fit: cover; }
+.profile-fallback .fallback-icon { width: 60px; height: 60px; }
+.profile-name { font-size: 1.5rem; color: var(--maroon); margin-bottom: 6px; }
+.profile-role { color: var(--gold); font-size: 0.9rem; letter-spacing: 0.5px; margin-bottom: 16px; font-weight: 500; }
+.profile-about { color: #6b5c52; font-size: 0.95rem; }
+.profile-divider {
+  font-family: var(--font-script);
+  font-size: 3rem;
+  color: var(--gold);
+}
+
+@media (max-width: 720px) {
+  .profile-cards { gap: 30px; }
+  .profile-divider { display: none; }
+}

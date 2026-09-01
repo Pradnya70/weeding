@@ -1,0 +1,24 @@
+/* =====================================================================
+   SECTION 2 — THE FIRST MEETING (split layout)
+   ===================================================================== */
+.first-meeting-section { background: var(--cream); }
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.split-media { position: relative; }
+.framed-photo, .framed-fallback {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: var(--shadow-soft);
+  border: 8px solid var(--white);
+  outline: 1px solid var(--champagne);
+}
+
+@media (max-width: 900px) {
+  .split { grid-template-columns: 1fr; gap: 36px; }
+}

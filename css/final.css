@@ -1,0 +1,45 @@
+/* =====================================================================
+   SECTION 12 — FINAL MESSAGE + FOOTER
+   ===================================================================== */
+.final-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ivory);
+  overflow: hidden;
+}
+.final-photo, .final-section .hero-media .photo-fallback {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+}
+.final-photo { animation: heroZoom 26s ease-in-out infinite alternate-reverse; }
+.final-gradient {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(20,8,12,0.75), rgba(20,8,12,0.85));
+}
+.final-content { position: relative; z-index: 2; padding: 100px 24px; }
+.final-lines { margin-bottom: 40px; }
+.final-lines p {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(1.1rem, 2.4vw, 1.5rem);
+  color: var(--champagne);
+  margin-bottom: 14px;
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+}
+.final-lines p.in-view { opacity: 1; transform: translateY(0); }
+.final-couple-name { font-size: clamp(2.2rem, 6vw, 3.6rem); color: var(--gold-light); margin-bottom: 14px; }
+.heart-inline { color: var(--maroon); -webkit-text-stroke: 1px var(--gold-light); }
+.final-tag { font-size: 1.1rem; color: var(--cream); margin-bottom: 10px; }
+.final-date { font-family: var(--font-script); font-size: 1.8rem; color: var(--gold-light); }
+
+.site-footer {
+  background: var(--charcoal);
+  color: var(--champagne);
+  text-align: center;
+  padding: 26px 16px;
+  font-size: 0.85rem;
+}

@@ -1,0 +1,40 @@
+/* =====================================================================
+   SECTION 5 — THE YES MOMENT
+   ===================================================================== */
+.yes-section { position: relative; overflow: hidden; text-align: center; }
+.yes-particles { position: absolute; inset: 0; pointer-events: none; }
+.yes-spark {
+  position: absolute;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--gold-light);
+  opacity: 0;
+  animation: spark-pop 3.2s ease-in-out infinite;
+}
+@keyframes spark-pop {
+  0% { opacity: 0; transform: translateY(20px) scale(0.5); }
+  40% { opacity: 0.9; }
+  100% { opacity: 0; transform: translateY(-60px) scale(1.2); }
+}
+.yes-big {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: clamp(4rem, 16vw, 9rem);
+  color: var(--gold-light);
+  text-shadow: 0 0 60px rgba(217, 180, 117, 0.5);
+  margin: 20px 0;
+  letter-spacing: 4px;
+}
+.yes-heart {
+  display: inline-block;
+  animation: heartbeat 1.6s ease-in-out infinite;
+  color: var(--maroon);
+  -webkit-text-stroke: 1px var(--gold-light);
+}
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  15% { transform: scale(1.25); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.15); }
+  60% { transform: scale(1); }
+}

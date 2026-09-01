@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaibhav &amp; Pradnya — Forever Begins Here</title>
+<meta name="description" content="The story of Vaibhav and Pradnya — from an arranged introduction to a beautiful YES.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/intro.css">
+<link rel="stylesheet" href="css/first-meeting.css">
+<link rel="stylesheet" href="css/waiting.css">
+<link rel="stylesheet" href="css/letter.css">
+<link rel="stylesheet" href="css/yes.css">
+<link rel="stylesheet" href="css/careers.css">
+<link rel="stylesheet" href="css/timeline.css">
+<link rel="stylesheet" href="css/wedding.css">
+<link rel="stylesheet" href="css/gallery.css">
+<link rel="stylesheet" href="css/family.css">
+<link rel="stylesheet" href="css/rsvp.css">
+<link rel="stylesheet" href="css/final.css">
+<link rel="icon" type="image/svg+xml" href="assets/logo-monogram.svg">
+</head>
+<body>
+
+<!-- Floating petals layer -->
+<div class="petals-layer" id="petalsLayer" aria-hidden="true"></div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Music control -->
+<button class="music-control" id="musicControl" aria-label="Toggle wedding music" aria-pressed="false">
+  <span class="music-icon">♫</span>
+  <span class="music-label">Music</span>
+</button>
+<audio id="bgMusic" loop preload="none"></audio>
+
+<!-- Mobile nav toggle -->
+<nav class="site-nav" id="siteNav">
+  <a href="#hero" class="nav-brand" id="navBrand" aria-label="Vaibhav and Pradnya">
+    <img class="nav-logo" src="assets/logo-monogram.svg" alt="">
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="navLinks">
+    <a href="#our-story">Our Story</a>
+    <a href="#story-timeline">Timeline</a>
+    <a href="#wedding-events">Wedding</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#family">Family</a>
+    <a href="#rsvp">RSVP</a>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="hero">
+  <div class="hero-media">
+    <img class="hero-photo" id="heroPhoto" src="assets/couple-hero.svg" alt="Vaibhav and Pradnya">
+    <div class="photo-fallback hero-fallback" id="heroFallback">
+      <div class="fallback-monogram">A <span>&amp;</span> I</div>
+    </div>
+    <div class="hero-gradient"></div>
+  </div>
+  <div class="hero-content reveal-up">
+    <p class="eyebrow">Together Forever</p>
+    <h1 class="hero-names"><span id="heroGroomName">Vaibhav</span> <span class="amp">&amp;</span> <span id="heroBrideName">Pradnya</span></h1>
+    <p class="hero-tagline" id="heroTagline">Two families. Two journeys. One beautiful beginning.</p>
+    <p class="hero-date" id="heroDate">12th December 2026</p>
+  </div>
+  <a href="#our-story" class="scroll-cue" aria-label="Scroll to discover our story">
+    <span>Scroll to discover our story</span>
+    <span class="scroll-arrow">↓</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ================= SECTION 1 — INTRO ================= -->
+<section class="section intro-section" id="our-story">
+  <div class="container narrow">
+    <p class="section-kicker reveal-up">A Pure Arranged Marriage Story</p>
+    <h2 class="section-heading serif reveal-up" id="introHeading">Some Stories Begin With Love.<br>Ours Began With a Simple Introduction.</h2>
+    <p class="section-text reveal-up" id="introText"></p>
+
+    <div class="mini-timeline reveal-up">
+      <div class="mini-step">
+        <div class="mini-icon" data-icon="family"></div>
+        <span>Family</span>
+      </div>
+      <div class="mini-connector"></div>
+      <div class="mini-step">
+        <div class="mini-icon" data-icon="meeting"></div>
+        <span>Meeting</span>
+      </div>
+      <div class="mini-connector"></div>
+      <div class="mini-step">
+        <div class="mini-icon" data-icon="thought"></div>
+        <span>Understanding</span>
+      </div>
+      <div class="mini-connector"></div>
+      <div class="mini-step">
+        <div class="mini-icon" data-icon="decision"></div>
+        <span>Decision</span>
+      </div>
+      <div class="mini-connector"></div>
+      <div class="mini-step">
+        <div class="mini-icon" data-icon="heart"></div>
+        <span>Forever</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECTION 2 — FIRST MEETING ================= -->
+<section class="section first-meeting-section" id="first-meeting">
+  <div class="container split">
+    <div class="split-media reveal-left">
+      <img class="framed-photo" id="firstMeetingPhoto" src="assets/first-meeting.jpg" alt="The first meeting">
+      <div class="photo-fallback framed-fallback" id="firstMeetingFallback">
+        <div class="fallback-icon" data-icon="meeting-lg"></div>
+      </div>
+    </div>
+    <div class="split-text reveal-right">
+      <p class="section-kicker">The First Step</p>
+      <h2 class="section-heading serif">The First Step</h2>
+      <p class="section-text" id="firstMeetingText"></p>
+      <p class="story-caption" id="firstMeetingCaption"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECTION 3 — THE LETTER ================= -->
+<section class="section letter-section" id="letter">
+  <div class="container narrow center">
+    <p class="section-kicker reveal-up">One Sincere Effort</p>
+    <h2 class="section-heading serif reveal-up" id="letterHeading">When Words Were All He Had</h2>
+    <p class="section-text reveal-up" id="letterText"></p>
+
+    <div class="letter-card reveal-up" id="letterPreview" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Open the letter">
+      <div class="letter-photo-wrap">
+        <img class="letter-photo" id="letterPhoto" src="assets/groom-letter.jpg" alt="A handwritten letter">
+        <div class="photo-fallback letter-fallback" id="letterFallback">
+          <div class="fallback-icon" data-icon="letter-lg"></div>
+          <p>His Handwritten Letter</p>
+        </div>
+      </div>
+      <div class="letter-card-shine"></div>
+    </div>
+
+    <button class="btn btn-primary reveal-up" id="openLetterBtn">Read His Letter</button>
+  </div>
+</section>
+
+<!-- ================= SECTION 4 — WAITING ================= -->
+<section class="section waiting-section dark-section" id="waiting">
+  <div class="container narrow center">
+    <p class="section-kicker light reveal-up">Patience. Respect. Hope.</p>
+    <h2 class="section-heading serif light reveal-up" id="waitingHeading">Three Months</h2>
+    <p class="section-subheading light reveal-up" id="waitingSubheading"></p>
+    <p class="section-text light reveal-up" id="waitingText"></p>
+
+    <div class="months-track reveal-up">
+      <div class="month-node" data-month="1">
+        <div class="month-dot"><span class="pulse"></span></div>
+        <p class="month-label">Month 1</p>
+      </div>
+      <div class="month-line"></div>
+      <div class="month-node" data-month="2">
+        <div class="month-dot"><span class="pulse"></span></div>
+        <p class="month-label">Month 2</p>
+      </div>
+      <div class="month-line"></div>
+      <div class="month-node" data-month="3">
+        <div class="month-dot"><span class="pulse"></span></div>
+        <p class="month-label">Month 3</p>
+      </div>
+    </div>
+
+    <p class="quote-text reveal-up" id="waitingQuote"></p>
+  </div>
+</section>
+
+<!-- Letter Modal -->
+<div class="letter-modal" id="letterModal" role="dialog" aria-modal="true" aria-label="His letter">
+  <div class="letter-modal-backdrop" id="letterModalBackdrop"></div>
+  <div class="letter-modal-content">
+    <button class="letter-modal-close" id="closeLetterBtn" aria-label="Close letter">&times;</button>
+    <div class="letter-paper">
+      <p class="letter-body" id="letterBody"></p>
+    </div>
+  </div>
+</div>
+
+<!-- ================= SECTION 5 — THE YES ================= -->
+<section class="section yes-section dark-section" id="yes-moment">
+  <div class="yes-particles" id="yesParticles" aria-hidden="true"></div>
+  <div class="container narrow center">
+    <h2 class="section-heading serif light reveal-up" id="yesHeading">Then Came The Answer...</h2>
+    <div class="yes-big reveal-up" id="yesBig">YES <span class="yes-heart">❤</span></div>
+    <p class="section-subheading light reveal-up" id="yesSubheading"></p>
+  </div>
+</section>
+
+<!-- ================= SECTION 6 — TWO CAREERS ================= -->
+<section class="section careers-section" id="careers">
+  <div class="container">
+    <h2 class="section-heading serif center reveal-up" id="careersHeading">Different journeys.<br>Different dreams.<br>One future.</h2>
+
+    <div class="profile-cards">
+      <div class="profile-card reveal-left">
+        <div class="profile-photo-wrap">
+          <img class="profile-photo" id="groomPhoto" src="assets/groom.jpg" alt="Groom portrait">
+          <div class="photo-fallback profile-fallback" id="groomFallback">
+            <div class="fallback-icon" data-icon="groom"></div>
+          </div>
+        </div>
+        <h3 class="profile-name" id="groomCardName">Vaibhav</h3>
+        <p class="profile-role" id="groomCardRole">SBI Circle Based Officer</p>
+        <p class="profile-about" id="groomCardAbout"></p>
+      </div>
+
+      <div class="profile-divider" aria-hidden="true">
+        <span>&amp;</span>
+      </div>
+
+      <div class="profile-card reveal-right">
+        <div class="profile-photo-wrap">
+          <img class="profile-photo" id="bridePhoto" src="assets/bride.jpg" alt="Bride portrait">
+          <div class="photo-fallback profile-fallback" id="brideFallback">
+            <div class="fallback-icon" data-icon="bride"></div>
+          </div>
+        </div>
+        <h3 class="profile-name" id="brideCardName">Pradnya</h3>
+        <p class="profile-role" id="brideCardRole">Software Developer</p>
+        <p class="profile-about" id="brideCardAbout"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECTION 7 — STORY TIMELINE ================= -->
+<section class="section timeline-section" id="story-timeline">
+  <div class="container narrow">
+    <p class="section-kicker center reveal-up">Every Step, Remembered</p>
+    <h2 class="section-heading serif center reveal-up">Our Story, Moment by Moment</h2>
+  </div>
+  <div class="vertical-timeline container" id="verticalTimeline"></div>
+</section>
+
+<!-- ================= SECTION 8 — THE WEDDING ================= -->
+<section class="section wedding-section dark-section" id="wedding-events">
+  <div class="container narrow center">
+    <p class="section-kicker light reveal-up">Now, The Wait Is Over</p>
+    <h2 class="section-heading serif light reveal-up">
+      <span id="weddingNames">Vaibhav &amp; Pradnya</span>
+    </h2>
+    <p class="section-subheading light reveal-up">Are getting married!</p>
+
+    <div class="wedding-meta reveal-up">
+      <div><span class="meta-label">Date</span><span class="meta-value" id="weddingDateText">12th December 2026</span></div>
+      <div><span class="meta-label">Venue</span><span class="meta-value" id="weddingVenueText">The Grand Regalia Banquets</span></div>
+      <div><span class="meta-label">Location</span><span class="meta-value" id="weddingLocationText">Pune, Maharashtra</span></div>
+    </div>
+
+    <div class="countdown reveal-up" id="countdown">
+      <div class="countdown-box"><span class="cd-num" id="cdDays">00</span><span class="cd-label">Days</span></div>
+      <div class="countdown-box"><span class="cd-num" id="cdHours">00</span><span class="cd-label">Hours</span></div>
+      <div class="countdown-box"><span class="cd-num" id="cdMinutes">00</span><span class="cd-label">Minutes</span></div>
+      <div class="countdown-box"><span class="cd-num" id="cdSeconds">00</span><span class="cd-label">Seconds</span></div>
+    </div>
+
+    <div class="venue-media reveal-up">
+      <img class="venue-photo" id="venuePhoto" src="assets/venue.svg" alt="Wedding venue">
+      <div class="photo-fallback venue-fallback" id="venueFallback">
+        <div class="fallback-icon" data-icon="venue"></div>
+      </div>
+    </div>
+
+    <a class="btn btn-outline-light reveal-up" id="mapsBtn" href="#" target="_blank" rel="noopener">View on Google Maps</a>
+
+    <div class="event-cards reveal-up" id="eventCards"></div>
+  </div>
+</section>
+
+<!-- ================= SECTION 9 — GALLERY ================= -->
+<section class="section gallery-section" id="gallery">
+  <div class="container">
+    <p class="section-kicker center reveal-up">A Few Frames</p>
+    <h2 class="section-heading serif center reveal-up">Photo Gallery</h2>
+
+    <div class="gallery-filters reveal-up" id="galleryFilters"></div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close photo">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous photo">&#10094;</button>
+  <img class="lightbox-image" id="lightboxImage" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next photo">&#10095;</button>
+</div>
+
+<!-- ================= SECTION 10 — FAMILY ================= -->
+<section class="section family-section" id="family">
+  <div class="container">
+    <p class="section-kicker center reveal-up">Two Families. One Celebration.</p>
+    <h2 class="section-heading serif center reveal-up">Our Families</h2>
+
+    <div class="family-grid">
+      <div class="family-card reveal-left">
+        <div class="family-photo-wrap">
+          <img class="family-photo" id="brideFamilyPhoto" src="assets/family-bride.jpg" alt="Bride's family">
+          <div class="photo-fallback family-fallback" id="brideFamilyFallback">
+            <div class="fallback-icon" data-icon="family-lg"></div>
+          </div>
+        </div>
+        <h3>Pradnya's Family</h3>
+        <p id="brideFamilyIntro"></p>
+      </div>
+      <div class="family-card reveal-right">
+        <div class="family-photo-wrap">
+          <img class="family-photo" id="groomFamilyPhoto" src="assets/family-groom.jpg" alt="Groom's family">
+          <div class="photo-fallback family-fallback" id="groomFamilyFallback">
+            <div class="fallback-icon" data-icon="family-lg"></div>
+          </div>
+        </div>
+        <h3>Vaibhav's Family</h3>
+        <p id="groomFamilyIntro"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECTION 11 — RSVP ================= -->
+<section class="section rsvp-section" id="rsvp">
+  <div class="container narrow center">
+    <p class="section-kicker reveal-up">Kindly Respond</p>
+    <h2 class="section-heading serif reveal-up">Will You Celebrate With Us?</h2>
+
+    <form class="rsvp-form reveal-up" id="rsvpForm">
+      <div class="form-row">
+        <label for="rsvpName">Name</label>
+        <input type="text" id="rsvpName" name="name" required placeholder="Your full name">
+      </div>
+      <div class="form-row">
+        <label for="rsvpPhone">Phone Number</label>
+        <input type="tel" id="rsvpPhone" name="phone" required placeholder="+91 00000 00000">
+      </div>
+      <div class="form-row">
+        <label for="rsvpGuests">Number of Guests</label>
+        <input type="number" id="rsvpGuests" name="guests" min="1" max="10" value="1">
+      </div>
+      <div class="form-row">
+        <label>Will you attend?</label>
+        <div class="attend-toggle">
+          <input type="radio" id="attendYes" name="attending" value="yes" checked>
+          <label for="attendYes" class="toggle-pill toggle-yes">Yes, I'll Be There ❤️</label>
+          <input type="radio" id="attendNo" name="attending" value="no">
+          <label for="attendNo" class="toggle-pill toggle-no">Sorry, I Can't Attend</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="rsvpMessage">Message</label>
+        <textarea id="rsvpMessage" name="message" rows="3" placeholder="Leave a warm wish for the couple..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary rsvp-submit">Send RSVP</button>
+      <p class="rsvp-success" id="rsvpSuccess" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ================= SECTION 12 — FINAL ================= -->
+<section class="section final-section" id="final">
+  <div class="hero-media">
+    <img class="final-photo" id="finalPhoto" src="assets/couple-hero.svg" alt="Vaibhav and Pradnya">
+    <div class="photo-fallback hero-fallback" id="finalFallback">
+      <div class="fallback-monogram">A <span>&amp;</span> I</div>
+    </div>
+    <div class="final-gradient"></div>
+  </div>
+  <div class="container narrow center final-content">
+    <div class="final-lines" id="finalLines"></div>
+    <h2 class="final-couple-name serif" id="finalCoupleName">Vaibhav <span class="heart-inline">♥</span> Pradnya</h2>
+    <p class="final-tag">Forever starts here.</p>
+    <p class="final-date" id="finalDate">12th December 2026</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Made with love for <span id="footerNames">Vaibhav &amp; Pradnya</span> — <span id="footerDate">12th December 2026</span></p>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/fallback.js"></script>
+<script src="js/content.js"></script>
+<script src="js/timeline.js"></script>
+<script src="js/events.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/letter.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/petals.js"></script>
+<script src="js/music.js"></script>
+<script src="js/rsvp.js"></script>
+<script src="js/init.js"></script>
+</body>
+</html>

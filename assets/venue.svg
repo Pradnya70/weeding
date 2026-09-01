@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a0d18"/>
+      <stop offset="55%" stop-color="#6e1423"/>
+      <stop offset="100%" stop-color="#d9b475"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect x="16" y="16" width="1248" height="688" fill="none" stroke="#f3e2bb" stroke-opacity="0.4" stroke-width="1.5"/>
+
+  <!-- mandap / hall arch icon -->
+  <g transform="translate(640 210)" fill="none" stroke="#e8c9a0" stroke-width="6" stroke-linecap="round" opacity="0.85">
+    <path d="M-70 60 V-10 C -70 -55 -35 -85 0 -85 C 35 -85 70 -55 70 -10 V60"/>
+    <path d="M-90 60 H90"/>
+    <path d="M-70 60 V80 M70 60 V80 M-30 60 V80 M30 60 V80"/>
+    <circle cx="0" cy="-40" r="10"/>
+  </g>
+
+  <text x="640" y="420" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="56" fill="#fbf6ef">Sonai Palace Function Hall</text>
+  <text x="640" y="470" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" fill="#e8c9a0">Ahmedpur, Maharashtra 413515</text>
+  <text x="640" y="530" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" letter-spacing="3" font-size="18" fill="#d9b475" opacity="0.85">VENUE PHOTO PLACEHOLDER</text>
+</svg>
