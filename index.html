@@ -15,8 +15,6 @@
 <link rel="stylesheet" href="css/hero.css">
 <link rel="stylesheet" href="css/intro.css">
 <link rel="stylesheet" href="css/first-meeting.css">
-<link rel="stylesheet" href="css/waiting.css">
-<link rel="stylesheet" href="css/letter.css">
 <link rel="stylesheet" href="css/yes.css">
 <link rel="stylesheet" href="css/careers.css">
 <link rel="stylesheet" href="css/timeline.css">
@@ -25,6 +23,7 @@
 <link rel="stylesheet" href="css/family.css">
 <link rel="stylesheet" href="css/rsvp.css">
 <link rel="stylesheet" href="css/final.css">
+<link rel="stylesheet" href="css/romance.css">
 <link rel="icon" type="image/svg+xml" href="assets/logo-monogram.svg">
 </head>
 <body>
@@ -89,6 +88,11 @@
     <p class="section-kicker reveal-up">A Pure Arranged Marriage Story</p>
     <h2 class="section-heading serif reveal-up" id="introHeading">Some Stories Begin With Love.<br>Ours Began With a Simple Introduction.</h2>
     <p class="section-text reveal-up" id="introText"></p>
+    <p class="intro-highlight reveal-up" id="introHighlight"></p>
+
+    <figure class="intro-photo reveal-up">
+      <img src="assets/arranged-marriage-wide.jpg" alt="Tuzh Majha - Aamcha Arrange Marriage" loading="lazy">
+    </figure>
 
     <div class="mini-timeline reveal-up">
       <div class="mini-step">
@@ -137,67 +141,6 @@
   </div>
 </section>
 
-<!-- ================= SECTION 3 — THE LETTER ================= -->
-<section class="section letter-section" id="letter">
-  <div class="container narrow center">
-    <p class="section-kicker reveal-up">One Sincere Effort</p>
-    <h2 class="section-heading serif reveal-up" id="letterHeading">When Words Were All He Had</h2>
-    <p class="section-text reveal-up" id="letterText"></p>
-
-    <div class="letter-card reveal-up" id="letterPreview" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Open the letter">
-      <div class="letter-photo-wrap">
-        <img class="letter-photo" id="letterPhoto" src="assets/groom-letter.jpg" alt="A handwritten letter">
-        <div class="photo-fallback letter-fallback" id="letterFallback">
-          <div class="fallback-icon" data-icon="letter-lg"></div>
-          <p>His Handwritten Letter</p>
-        </div>
-      </div>
-      <div class="letter-card-shine"></div>
-    </div>
-
-    <button class="btn btn-primary reveal-up" id="openLetterBtn">Read His Letter</button>
-  </div>
-</section>
-
-<!-- ================= SECTION 4 — WAITING ================= -->
-<section class="section waiting-section dark-section" id="waiting">
-  <div class="container narrow center">
-    <p class="section-kicker light reveal-up">Patience. Respect. Hope.</p>
-    <h2 class="section-heading serif light reveal-up" id="waitingHeading">Three Months</h2>
-    <p class="section-subheading light reveal-up" id="waitingSubheading"></p>
-    <p class="section-text light reveal-up" id="waitingText"></p>
-
-    <div class="months-track reveal-up">
-      <div class="month-node" data-month="1">
-        <div class="month-dot"><span class="pulse"></span></div>
-        <p class="month-label">Month 1</p>
-      </div>
-      <div class="month-line"></div>
-      <div class="month-node" data-month="2">
-        <div class="month-dot"><span class="pulse"></span></div>
-        <p class="month-label">Month 2</p>
-      </div>
-      <div class="month-line"></div>
-      <div class="month-node" data-month="3">
-        <div class="month-dot"><span class="pulse"></span></div>
-        <p class="month-label">Month 3</p>
-      </div>
-    </div>
-
-    <p class="quote-text reveal-up" id="waitingQuote"></p>
-  </div>
-</section>
-
-<!-- Letter Modal -->
-<div class="letter-modal" id="letterModal" role="dialog" aria-modal="true" aria-label="His letter">
-  <div class="letter-modal-backdrop" id="letterModalBackdrop"></div>
-  <div class="letter-modal-content">
-    <button class="letter-modal-close" id="closeLetterBtn" aria-label="Close letter">&times;</button>
-    <div class="letter-paper">
-      <p class="letter-body" id="letterBody"></p>
-    </div>
-  </div>
-</div>
 
 <!-- ================= SECTION 5 — THE YES ================= -->
 <section class="section yes-section dark-section" id="yes-moment">
@@ -295,6 +238,8 @@
   <div class="container">
     <p class="section-kicker center reveal-up">A Few Frames</p>
     <h2 class="section-heading serif center reveal-up">Photo Gallery</h2>
+    <p class="gallery-script reveal-up">Moments we'll treasure forever</p>
+    <div class="heart-divider reveal-up" aria-hidden="true"><span></span><i>&#10084;</i><span></span></div>
 
     <div class="gallery-filters reveal-up" id="galleryFilters"></div>
     <div class="gallery-grid" id="galleryGrid"></div>
@@ -410,7 +355,6 @@
 <script src="js/timeline.js"></script>
 <script src="js/events.js"></script>
 <script src="js/gallery.js"></script>
-<script src="js/letter.js"></script>
 <script src="js/countdown.js"></script>
 <script src="js/reveal.js"></script>
 <script src="js/nav.js"></script>

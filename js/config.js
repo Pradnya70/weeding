@@ -80,32 +80,23 @@ var WEDDING_CONFIG = {
 
     introHeading: "Some Stories Begin With Love.<br>Ours Began With a Simple Introduction.",
     introText: "Theirs was a traditional arranged marriage. Two families, guided by trust and respect, came together and introduced Vaibhav and Pradnya to one another. There was no long romantic history — just two families visiting each other, taking their time, and slowly, quietly discovering the beginning of forever.",
+    introHighlight: "That 5-minute conversation changed everything.",
 
     firstMeetingHeading: "The First Step",
     firstMeetingText: "It began with Vaibhav, along with his parents, visiting Pradnya's home to see her and meet her family — the traditional first step of an arranged introduction. It was a simple, respectful meeting, with both families sharing a cup of tea and getting to know one another for the very first time.",
     firstMeetingCaption: "Every forever starts with a single visit.",
 
-    letterHeading: "When Words Were All He Had",
-    letterText: "Before Pradnya's family had even visited his home, Vaibhav wanted her to know exactly where he stood. He picked up a pen and wrote her a small, heartfelt letter — not to pressure her, but simply to be honest. Nothing dramatic. Just a few honest words, from his heart to hers.",
-    letterButtonText: "Read His Letter",
-    letterBody: "Dear Pradnya,\n\nI know this decision is not an easy one, and I don't want you to feel any pressure from my side. Take all the time you need.\n\nI just wanted you to know — from the little time we've spent together, and everything my family has shared about yours — I see someone thoughtful, someone strong, someone I would be genuinely grateful to share my life with.\n\nWhatever you decide, I will respect it with all my heart. But if you ever wonder whether I am sure about this — I am.\n\nWith patience and hope,\nVaibhav",
 
-    waitingHeading: "Three Months",
-    waitingSubheading: "No rush, no pressure — just two families taking their time.",
-    waitingText: "After the letter, Pradnya and her family visited Vaibhav's home in return — spending time with his family, observing their values, their warmth, and the everyday life she would be joining. Three months passed in this quiet, patient way before the marriage could finally be fixed.",
-    waitingQuote: "Some bonds are built one visit at a time.",
 
     yesHeading: "Then Came The Answer...",
     yesBigText: "YES",
-    yesSubheading: "After a heartfelt letter, two family visits and three months of patience, the answer everyone was waiting for finally came — and it was YES. A few days later, the marriage was formally fixed.",
+    yesSubheading: "After two family visits, the answer everyone was waiting for finally came — and it was YES. A few days later, the marriage was formally fixed.",
 
     careersHeading: "Different journeys.<br>Different dreams.<br>One future.",
 
     finalLines: [
       "From a simple first visit...",
-      "to a little letter...",
       "to a visit returned with warmth...",
-      "to three months of patience...",
       "to one beautiful YES...",
       "our forever begins."
     ]
@@ -115,12 +106,9 @@ var WEDDING_CONFIG = {
   // TIMELINE
   // ---------------------------------------------------------------
   timeline: [
-    { period: "Month 1", title: "Vaibhav Visits Pradnya's Home", text: "Vaibhav, along with his parents, visits Pradnya's home to see her and meet her family — the traditional first step.", icon: "family" },
-    { period: "Month 1", title: "The Letter", text: "Before Pradnya's family visits his home, Vaibhav writes her a small, heartfelt letter — honest, not pressuring.", icon: "letter" },
-    { period: "Month 1–3", title: "Time to Understand", text: "No rush, no pressure — just two families taking the time to truly know one another.", icon: "thought" },
-    { period: "Month 2", title: "Pradnya Visits Vaibhav's Home", text: "Pradnya, with her family, visits Vaibhav's home in return, observing his family's values and everyday warmth.", icon: "home" },
-    { period: "Month 3", title: "Three Months of Waiting", text: "Both families wait patiently as the decision quietly takes shape.", icon: "clock" },
-    { period: "Month 3", title: "The YES", text: "Pradnya says yes, and a few days later the marriage is formally fixed.", icon: "heart" },
+    { period: "The First Step", title: "Vaibhav Visits Pradnya's Home", text: "Vaibhav, along with his parents, visits Pradnya's home to see her and meet her family — the traditional first step.", icon: "family" },
+    { period: "The Return Visit", title: "Pradnya Visits Vaibhav's Home", text: "Pradnya, with her family, visits Vaibhav's home in return, observing his family's values and everyday warmth.", icon: "home" },
+    { period: "The Answer", title: "The YES", text: "Pradnya says yes, and a few days later the marriage is formally fixed.", icon: "heart" },
     { period: "28 Nov 2026", title: "Engagement, Sangeet & Haldi", text: "Both families come together at Sonai Palace, Ahmedpur, to celebrate the engagement, dance the night away at sangeet, and bless the couple with haldi.", icon: "hands" },
     { period: "The Big Day", title: "The Wedding Day", text: "Vaibhav & Pradnya begin their forever, surrounded by everyone they love.", icon: "rings" }
   ],
@@ -139,7 +127,6 @@ var WEDDING_CONFIG = {
   images: {
     coupleHero: "assets/couple-hero.svg",
     firstMeeting: "assets/first-meeting.jpg",
-    groomLetter: "assets/groom-letter.jpg",
     groom: "assets/groom.jpg",
     bride: "assets/bride.jpg",
     familyBride: "assets/family-bride.jpg",
@@ -151,7 +138,13 @@ var WEDDING_CONFIG = {
       { src: "assets/gallery-03.jpg", category: "Memories" },
       { src: "assets/gallery-04.jpg", category: "Wedding Moments" },
       { src: "assets/gallery-05.jpg", category: "Family" },
-      { src: "assets/gallery-06.jpg", category: "Memories" }
+      { src: "assets/gallery-06.jpg", category: "Memories" },
+      { src: "assets/prewedding-01.jpg", category: "Pre-Wedding" },
+      { src: "assets/prewedding-02.jpg", category: "Pre-Wedding" },
+      { src: "assets/prewedding-03.jpg", category: "Pre-Wedding" },
+      { src: "assets/prewedding-04.jpg", category: "Pre-Wedding" },
+      { src: "assets/prewedding-05.jpg", category: "Pre-Wedding" },
+      { src: "assets/prewedding-06.jpg", category: "Pre-Wedding" }
     ]
   },
 

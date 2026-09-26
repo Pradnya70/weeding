@@ -23,7 +23,6 @@ function wireAllFallbacks() {
   wireImageFallback("heroPhoto", "heroFallback");
   wireImageFallback("finalPhoto", "finalFallback");
   wireImageFallback("firstMeetingPhoto", "firstMeetingFallback");
-  wireImageFallback("letterPhoto", "letterFallback");
   wireImageFallback("groomPhoto", "groomFallback");
   wireImageFallback("bridePhoto", "brideFallback");
   wireImageFallback("venuePhoto", "venueFallback");

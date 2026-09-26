@@ -10,7 +10,6 @@ is added, an elegant placeholder is shown in its place.
                       landscape photo, 1920x1080 or larger, and point
                       images.coupleHero at it in js/config.js)
   first-meeting.jpg   "The First Step" section photo     (portrait, 4:5)
-  groom-letter.jpg    Scanned handwritten letter photo   (portrait, 3:4)
   groom.jpg           Groom's portrait                   (square, 800x800)
   bride.jpg           Bride's portrait                   (square, 800x800)
   family-bride.jpg    Bride's family photo                (landscape, 16:10)
@@ -30,3 +29,5 @@ To change filenames, categories, or add more gallery photos, edit the
 "images" and "music" sections inside /js/config.js — everything else
 on the site (names, dates, story text, venue, timeline) is also edited
 from that single file.
+
+  prewedding-01..06.jpg   Pre-wedding shoot photos for the gallery "Pre-Wedding" filter (any size)

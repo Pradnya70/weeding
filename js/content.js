@@ -17,22 +17,11 @@ function populateContent() {
   // Intro
   $("#introHeading").innerHTML = s.introHeading;
   $("#introText").textContent = s.introText;
+  $("#introHighlight").textContent = s.introHighlight;
 
   // First meeting
   $("#firstMeetingText").textContent = s.firstMeetingText;
   $("#firstMeetingCaption").textContent = s.firstMeetingCaption;
-
-  // Waiting
-  $("#waitingHeading").textContent = s.waitingHeading;
-  $("#waitingSubheading").textContent = s.waitingSubheading;
-  $("#waitingText").textContent = s.waitingText;
-  $("#waitingQuote").textContent = '"' + s.waitingQuote + '"';
-
-  // Letter
-  $("#letterHeading").textContent = s.letterHeading;
-  $("#letterText").textContent = s.letterText;
-  $("#openLetterBtn").textContent = s.letterButtonText;
-  $("#letterBody").textContent = s.letterBody;
 
   // Yes
   $("#yesHeading").textContent = s.yesHeading;
@@ -69,7 +58,6 @@ function populateContent() {
   $("#heroPhoto").src = cfg.images.coupleHero;
   $("#finalPhoto").src = cfg.images.coupleHero;
   $("#firstMeetingPhoto").src = cfg.images.firstMeeting;
-  $("#letterPhoto").src = cfg.images.groomLetter;
   $("#groomPhoto").src = cfg.images.groom;
   $("#bridePhoto").src = cfg.images.bride;
   $("#venuePhoto").src = cfg.images.venue;

@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
   renderGallery();
   injectIcons();
   wireAllFallbacks();
-  wireLetterModal();
   wireLightbox();
   startCountdown();
   wireNav();

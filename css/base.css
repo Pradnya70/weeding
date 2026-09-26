@@ -149,7 +149,7 @@ p { margin: 0; }
 
 /* =====================================================================
    PHOTO FALLBACKS (shown automatically if a real photo file is missing)
-   Used by hero, first-meeting, letter, careers, wedding, family, gallery.
+   Used by hero, first-meeting, careers, wedding, family, gallery.
    ===================================================================== */
 .photo-fallback {
   display: none;
@@ -171,11 +171,6 @@ p { margin: 0; }
 .fallback-monogram span { padding: 0 12px; }
 .fallback-icon { width: 56px; height: 56px; opacity: 0.6; }
 .fallback-icon svg { width: 100%; height: 100%; }
-.letter-fallback p {
-  font-family: var(--font-script);
-  font-size: 1.4rem;
-  color: rgba(74,13,24,0.6);
-}
 
 /* =====================================================================
    SCROLL REVEAL ANIMATIONS
