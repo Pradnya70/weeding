@@ -25,7 +25,4 @@ function wireAllFallbacks() {
   wireImageFallback("firstMeetingPhoto", "firstMeetingFallback");
   wireImageFallback("groomPhoto", "groomFallback");
   wireImageFallback("bridePhoto", "brideFallback");
-  wireImageFallback("venuePhoto", "venueFallback");
-  wireImageFallback("brideFamilyPhoto", "brideFamilyFallback");
-  wireImageFallback("groomFamilyPhoto", "groomFamilyFallback");
-}
+  wireImageFallback("venuePhoto", "venueFallback");}

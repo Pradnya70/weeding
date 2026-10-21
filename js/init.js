@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
   wireScrollReveal();
   wireMusic();
   wireRSVP();
+  wireReel();
   spawnPetals();
   spawnYesParticles();
 });

@@ -44,10 +44,6 @@ function populateContent() {
   $("#weddingLocationText").textContent = cfg.city + ", " + cfg.state;
   $("#mapsBtn").href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(cfg.mapsQuery);
 
-  // Family
-  $("#brideFamilyIntro").textContent = cfg.family.brideFamilyIntro;
-  $("#groomFamilyIntro").textContent = cfg.family.groomFamilyIntro;
-
   // Final section
   $("#finalCoupleName").innerHTML = cfg.groomName + ' <span class="heart-inline">♥</span> ' + cfg.brideName;
   $("#finalDate").textContent = cfg.weddingDateDisplay;
@@ -61,9 +57,6 @@ function populateContent() {
   $("#groomPhoto").src = cfg.images.groom;
   $("#bridePhoto").src = cfg.images.bride;
   $("#venuePhoto").src = cfg.images.venue;
-  $("#brideFamilyPhoto").src = cfg.images.familyBride;
-  $("#groomFamilyPhoto").src = cfg.images.familyGroom;
-
   // Final lines
   $("#finalLines").innerHTML = s.finalLines.map(function (line) {
     return "<p>" + line + "</p>";

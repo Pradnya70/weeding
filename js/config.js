@@ -43,18 +43,11 @@ var WEDDING_CONFIG = {
 
   events: [
     {
-      name: "Engagement",
+      name: "Engagement & Sangeet",
       date: "28th November 2026",
-      time: "5:00 PM",
+      time: "5:00 PM onwards",
       venue: "Sonai Palace Function Hall, Ahmedpur",
       icon: "engagement"
-    },
-    {
-      name: "Sangeet",
-      date: "28th November 2026",
-      time: "7:00 PM",
-      venue: "Sonai Palace Function Hall, Ahmedpur",
-      icon: "sangeet"
     },
     {
       name: "Haldi",
@@ -125,7 +118,7 @@ var WEDDING_CONFIG = {
   // IMAGES — replace files inside /assets using these exact names
   // ---------------------------------------------------------------
   images: {
-    coupleHero: "assets/couple-hero.svg",
+    coupleHero: "assets/hero-couple.jpg",
     firstMeeting: "assets/first-meeting.jpg",
     groom: "assets/groom.jpg",
     bride: "assets/bride.jpg",
@@ -154,6 +147,13 @@ var WEDDING_CONFIG = {
   music: {
     src: "assets/wedding-music.mp3",
     label: "Music"
+  },
+
+  // ---------------------------------------------------------------
+  // WEDDING TEASER REEL — vertical 9:16 video (1080x1920)
+  // ---------------------------------------------------------------
+  reel: {
+    src: "assets/wedding-trailer.mp4"
   },
 
   // ---------------------------------------------------------------

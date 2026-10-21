@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -20,10 +20,10 @@
 <link rel="stylesheet" href="css/timeline.css">
 <link rel="stylesheet" href="css/wedding.css">
 <link rel="stylesheet" href="css/gallery.css">
-<link rel="stylesheet" href="css/family.css">
 <link rel="stylesheet" href="css/rsvp.css">
 <link rel="stylesheet" href="css/final.css">
 <link rel="stylesheet" href="css/romance.css">
+<link rel="stylesheet" href="css/reel.css">
 <link rel="icon" type="image/svg+xml" href="assets/logo-monogram.svg">
 </head>
 <body>
@@ -50,11 +50,11 @@
     <span></span><span></span><span></span>
   </button>
   <div class="nav-links" id="navLinks">
+    <a href="#teaser">Teaser</a>
     <a href="#our-story">Our Story</a>
     <a href="#story-timeline">Timeline</a>
     <a href="#wedding-events">Wedding</a>
     <a href="#gallery">Gallery</a>
-    <a href="#family">Family</a>
     <a href="#rsvp">RSVP</a>
   </div>
 </nav>
@@ -62,7 +62,7 @@
 <!-- ================= HERO ================= -->
 <header class="hero" id="hero">
   <div class="hero-media">
-    <img class="hero-photo" id="heroPhoto" src="assets/couple-hero.svg" alt="Vaibhav and Pradnya">
+    <img class="hero-photo" id="heroPhoto" src="assets/hero-couple.jpg" alt="Vaibhav and Pradnya">
     <div class="photo-fallback hero-fallback" id="heroFallback">
       <div class="fallback-monogram">A <span>&amp;</span> I</div>
     </div>
@@ -81,6 +81,19 @@
 </header>
 
 <main>
+
+<!-- ================= WEDDING TEASER REEL ================= -->
+<section class="section reel-section" id="teaser">
+  <div class="container narrow center">
+    <p class="section-kicker reveal-up">A Glimpse of Forever</p>
+    <h2 class="section-heading serif reveal-up">Our Wedding Teaser</h2>
+    <div class="reel-frame">
+      <video class="reel-video" id="reelVideo" muted autoplay loop playsinline preload="auto" aria-label="Wedding teaser video"></video>
+      <button class="reel-sound" id="reelSound" type="button" aria-pressed="false">🔇 Tap for sound</button>
+    </div>
+    <p class="reel-tag reveal-up">Coming soon to forever…</p>
+  </div>
+</section>
 
 <!-- ================= SECTION 1 — INTRO ================= -->
 <section class="section intro-section" id="our-story">
@@ -255,37 +268,6 @@
   <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next photo">&#10095;</button>
 </div>
 
-<!-- ================= SECTION 10 — FAMILY ================= -->
-<section class="section family-section" id="family">
-  <div class="container">
-    <p class="section-kicker center reveal-up">Two Families. One Celebration.</p>
-    <h2 class="section-heading serif center reveal-up">Our Families</h2>
-
-    <div class="family-grid">
-      <div class="family-card reveal-left">
-        <div class="family-photo-wrap">
-          <img class="family-photo" id="brideFamilyPhoto" src="assets/family-bride.jpg" alt="Bride's family">
-          <div class="photo-fallback family-fallback" id="brideFamilyFallback">
-            <div class="fallback-icon" data-icon="family-lg"></div>
-          </div>
-        </div>
-        <h3>Pradnya's Family</h3>
-        <p id="brideFamilyIntro"></p>
-      </div>
-      <div class="family-card reveal-right">
-        <div class="family-photo-wrap">
-          <img class="family-photo" id="groomFamilyPhoto" src="assets/family-groom.jpg" alt="Groom's family">
-          <div class="photo-fallback family-fallback" id="groomFamilyFallback">
-            <div class="fallback-icon" data-icon="family-lg"></div>
-          </div>
-        </div>
-        <h3>Vaibhav's Family</h3>
-        <p id="groomFamilyIntro"></p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ================= SECTION 11 — RSVP ================= -->
 <section class="section rsvp-section" id="rsvp">
   <div class="container narrow center">
@@ -327,7 +309,7 @@
 <!-- ================= SECTION 12 — FINAL ================= -->
 <section class="section final-section" id="final">
   <div class="hero-media">
-    <img class="final-photo" id="finalPhoto" src="assets/couple-hero.svg" alt="Vaibhav and Pradnya">
+    <img class="final-photo" id="finalPhoto" src="assets/hero-couple.jpg" alt="Vaibhav and Pradnya">
     <div class="photo-fallback hero-fallback" id="finalFallback">
       <div class="fallback-monogram">A <span>&amp;</span> I</div>
     </div>
@@ -361,6 +343,7 @@
 <script src="js/petals.js"></script>
 <script src="js/music.js"></script>
 <script src="js/rsvp.js"></script>
+<script src="js/reel.js"></script>
 <script src="js/init.js"></script>
 </body>
 </html>

@@ -6,11 +6,14 @@
   height: 100svh;
   min-height: 560px;
   display: flex;
-  align-items: center;
+  /* Text sits in the lower part so the couple's faces stay visible */
+  align-items: flex-end;
   justify-content: center;
+  padding-bottom: 110px;
   overflow: hidden;
   color: var(--ivory);
 }
+.hero-photo { object-position: 50% 35%; }
 .hero-media, .hero-media img, .hero-media .photo-fallback {
   position: absolute;
   inset: 0;
@@ -25,7 +28,7 @@
 }
 .hero-gradient {
   position: absolute; inset: 0; z-index: 2;
-  background: linear-gradient(180deg, rgba(30,10,15,0.35) 0%, rgba(30,10,15,0.45) 50%, rgba(20,8,12,0.8) 100%);
+  background: linear-gradient(180deg, rgba(30,10,15,0.35) 0%, rgba(30,10,15,0.1) 35%, rgba(30,10,15,0.55) 65%, rgba(20,8,12,0.9) 100%);
 }
 .hero-content {
   position: relative;
