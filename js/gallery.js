@@ -9,7 +9,8 @@ function renderGallery() {
   galleryImages = cfg.images.gallery;
   var categories = ["All"].concat(Array.from(new Set(galleryImages.map(function (g) { return g.category; }))));
 
-  $("#galleryFilters").innerHTML = categories.map(function (cat, i) {
+  var filters = $("#galleryFilters");
+  if (filters) filters.innerHTML = categories.map(function (cat, i) {
     return '<button class="filter-btn' + (i === 0 ? " active" : "") + '" data-filter="' + cat + '">' + cat + "</button>";
   }).join("");
 
@@ -27,7 +28,6 @@ function renderGallery() {
           '<div class="photo-fallback">' +
             '<div class="fallback-icon" data-icon="heart"></div>' +
           "</div>" +
-          '<div class="gallery-cat">' + img.category + "</div>" +
         "</div>"
       );
     }).join("");

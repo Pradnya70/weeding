@@ -19,12 +19,10 @@ var WEDDING_CONFIG = {
   groomName: "Vaibhav",
   groomFullName: "Vaibhav Deshmukh",
   groomProfession: "SBI Circle Based Officer",
-  groomAbout: "Patient, sincere and warm — Vaibhav believes that trust is built quietly, one honest conversation at a time.",
 
   brideName: "Pradnya",
   brideFullName: "Pradnya Kulkarni",
   brideProfession: "Software Developer",
-  brideAbout: "Thoughtful and independent — Pradnya believes a lifelong decision deserves time, patience and understanding.",
 
   coupleHashtag: "#VaibhavWedsPradnya",
 
@@ -69,50 +67,30 @@ var WEDDING_CONFIG = {
   // STORY TEXT — the heart of the site
   // ---------------------------------------------------------------
   story: {
-    heroTagline: "Two families. Two journeys. One beautiful beginning.",
+    heroTagline: "Together with our families, we invite you to celebrate our wedding.",
 
-    introHeading: "Some Stories Begin With Love.<br>Ours Began With a Simple Introduction.",
-    introText: "Theirs was a traditional arranged marriage. Two families, guided by trust and respect, came together and introduced Vaibhav and Pradnya to one another. There was no long romantic history — just two families visiting each other, taking their time, and slowly, quietly discovering the beginning of forever.",
-    introHighlight: "That 5-minute conversation changed everything.",
+    introHeading: "It Began With a Simple Introduction",
+    introText: "Ours is a traditional arranged marriage. Our families introduced us, and over a few thoughtful visits, two families came together as one.",
 
-    firstMeetingHeading: "The First Step",
-    firstMeetingText: "It began with Vaibhav, along with his parents, visiting Pradnya's home to see her and meet her family — the traditional first step of an arranged introduction. It was a simple, respectful meeting, with both families sharing a cup of tea and getting to know one another for the very first time.",
-    firstMeetingCaption: "Every forever starts with a single visit.",
+    firstMeetingText: "Vaibhav and his parents visited Pradnya's home to meet her family over a cup of tea — the first step of our journey together.",
 
-
-
-    yesHeading: "Then Came The Answer...",
+    yesHeading: "And Then Came the Answer",
     yesBigText: "YES",
-    yesSubheading: "After two family visits, the answer everyone was waiting for finally came — and it was YES. A few days later, the marriage was formally fixed.",
+    yesSubheading: "After two family visits, Pradnya said yes, and the marriage was formally fixed soon after.",
 
-    careersHeading: "Different journeys.<br>Different dreams.<br>One future.",
-
-    finalLines: [
-      "From a simple first visit...",
-      "to a visit returned with warmth...",
-      "to one beautiful YES...",
-      "our forever begins."
-    ]
+    careersHeading: "The Couple"
   },
 
   // ---------------------------------------------------------------
   // TIMELINE
   // ---------------------------------------------------------------
   timeline: [
-    { period: "The First Step", title: "Vaibhav Visits Pradnya's Home", text: "Vaibhav, along with his parents, visits Pradnya's home to see her and meet her family — the traditional first step.", icon: "family" },
-    { period: "The Return Visit", title: "Pradnya Visits Vaibhav's Home", text: "Pradnya, with her family, visits Vaibhav's home in return, observing his family's values and everyday warmth.", icon: "home" },
-    { period: "The Answer", title: "The YES", text: "Pradnya says yes, and a few days later the marriage is formally fixed.", icon: "heart" },
-    { period: "28 Nov 2026", title: "Engagement, Sangeet & Haldi", text: "Both families come together at Sonai Palace, Ahmedpur, to celebrate the engagement, dance the night away at sangeet, and bless the couple with haldi.", icon: "hands" },
-    { period: "The Big Day", title: "The Wedding Day", text: "Vaibhav & Pradnya begin their forever, surrounded by everyone they love.", icon: "rings" }
+    { period: "The First Visit", title: "Vaibhav Visits Pradnya's Home", text: "Vaibhav and his parents meet Pradnya and her family.", icon: "family" },
+    { period: "The Return Visit", title: "Pradnya Visits Vaibhav's Home", text: "Pradnya and her family visit Vaibhav's home in return.", icon: "home" },
+    { period: "The Answer", title: "The Yes", text: "Pradnya says yes, and the marriage is formally fixed.", icon: "heart" },
+    { period: "28 Nov 2026", title: "Engagement, Sangeet & Haldi", text: "Pre-wedding celebrations at Sonai Palace, Ahmedpur.", icon: "hands" },
+    { period: "The Big Day", title: "The Wedding", text: "Vaibhav and Pradnya are married in the presence of family and friends.", icon: "rings" }
   ],
-
-  // ---------------------------------------------------------------
-  // FAMILY
-  // ---------------------------------------------------------------
-  family: {
-    brideFamilyIntro: "Raised with warmth, independence and strong values.",
-    groomFamilyIntro: "A close-knit family built on patience, respect and togetherness."
-  },
 
   // ---------------------------------------------------------------
   // IMAGES — replace files inside /assets using these exact names
@@ -120,24 +98,10 @@ var WEDDING_CONFIG = {
   images: {
     coupleHero: "assets/hero-couple.jpg",
     firstMeeting: "assets/first-meeting.jpg",
-    groom: "assets/groom.jpg",
-    bride: "assets/bride.jpg",
-    familyBride: "assets/family-bride.jpg",
-    familyGroom: "assets/family-groom.jpg",
-    venue: "assets/venue.svg",
+    // Only photos not already shown elsewhere on the page.
+    // Add more as { src: "assets/your-photo.jpg", category: "Moments" }
     gallery: [
-      { src: "assets/gallery-01.jpg", category: "Our Beginning" },
-      { src: "assets/gallery-02.jpg", category: "Family" },
-      { src: "assets/gallery-03.jpg", category: "Memories" },
-      { src: "assets/gallery-04.jpg", category: "Wedding Moments" },
-      { src: "assets/gallery-05.jpg", category: "Family" },
-      { src: "assets/gallery-06.jpg", category: "Memories" },
-      { src: "assets/prewedding-01.jpg", category: "Pre-Wedding" },
-      { src: "assets/prewedding-02.jpg", category: "Pre-Wedding" },
-      { src: "assets/prewedding-03.jpg", category: "Pre-Wedding" },
-      { src: "assets/prewedding-04.jpg", category: "Pre-Wedding" },
-      { src: "assets/prewedding-05.jpg", category: "Pre-Wedding" },
-      { src: "assets/prewedding-06.jpg", category: "Pre-Wedding" }
+      { src: "assets/gallery-01.jpg", category: "Moments" }
     ]
   },
 
@@ -145,16 +109,20 @@ var WEDDING_CONFIG = {
   // MUSIC
   // ---------------------------------------------------------------
   music: {
-    src: "assets/wedding-music.mp3",
+    // Add a song to /assets and put its path here, e.g. "assets/wedding-music.mp3"
+    src: "",
     label: "Music"
   },
 
   // ---------------------------------------------------------------
   // WEDDING TEASER REEL — vertical 9:16 video (1080x1920)
   // ---------------------------------------------------------------
-  reel: {
-    src: "assets/wedding-trailer.mp4"
-  },
+  reels: [
+    { src: "assets/wedding-trailer.mp4", title: "Wedding Teaser" },
+    { src: "assets/reel-cafe.mp4", title: "Coffee Date" },
+    // wide: true = landscape film, shown full-width with normal video controls
+    { src: "assets/film-pune-city.mp4", title: "Pune Diaries — A Walk Through the City's Iconic Spots", wide: true, poster: "assets/film-pune-city-poster.jpg" }
+  ],
 
   // ---------------------------------------------------------------
   // RSVP

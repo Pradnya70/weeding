@@ -7,6 +7,9 @@ function wireMusic() {
   var audio = $("#bgMusic");
   var hasSource = true;
 
+  // No song configured yet: hide the button instead of showing an empty player.
+  if (!cfg.music.src) { btn.style.display = "none"; return; }
+
   audio.addEventListener("error", function () { hasSource = false; });
 
   btn.addEventListener("click", function () {

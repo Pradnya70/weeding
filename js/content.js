@@ -17,11 +17,9 @@ function populateContent() {
   // Intro
   $("#introHeading").innerHTML = s.introHeading;
   $("#introText").textContent = s.introText;
-  $("#introHighlight").textContent = s.introHighlight;
 
   // First meeting
   $("#firstMeetingText").textContent = s.firstMeetingText;
-  $("#firstMeetingCaption").textContent = s.firstMeetingCaption;
 
   // Yes
   $("#yesHeading").textContent = s.yesHeading;
@@ -32,20 +30,17 @@ function populateContent() {
   $("#careersHeading").innerHTML = s.careersHeading;
   $("#groomCardName").textContent = cfg.groomName;
   $("#groomCardRole").textContent = cfg.groomProfession;
-  $("#groomCardAbout").textContent = cfg.groomAbout;
   $("#brideCardName").textContent = cfg.brideName;
   $("#brideCardRole").textContent = cfg.brideProfession;
-  $("#brideCardAbout").textContent = cfg.brideAbout;
 
   // Wedding section
   $("#weddingNames").textContent = cfg.groomName + " & " + cfg.brideName;
-  $("#weddingDateText").textContent = cfg.weddingDateDisplay;
-  $("#weddingVenueText").textContent = cfg.venueName;
-  $("#weddingLocationText").textContent = cfg.city + ", " + cfg.state;
+  $("#venueName").textContent = cfg.venueName;
+  $("#venueAddress").textContent = cfg.venueAddress;
   $("#mapsBtn").href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(cfg.mapsQuery);
 
   // Final section
-  $("#finalCoupleName").innerHTML = cfg.groomName + ' <span class="heart-inline">♥</span> ' + cfg.brideName;
+  $("#finalCoupleName").innerHTML = cfg.groomName + ' <span class="heart-inline">&amp;</span> ' + cfg.brideName;
   $("#finalDate").textContent = cfg.weddingDateDisplay;
   $("#footerNames").textContent = cfg.groomName + " & " + cfg.brideName;
   $("#footerDate").textContent = cfg.weddingDateDisplay;
@@ -54,16 +49,9 @@ function populateContent() {
   $("#heroPhoto").src = cfg.images.coupleHero;
   $("#finalPhoto").src = cfg.images.coupleHero;
   $("#firstMeetingPhoto").src = cfg.images.firstMeeting;
-  $("#groomPhoto").src = cfg.images.groom;
-  $("#bridePhoto").src = cfg.images.bride;
-  $("#venuePhoto").src = cfg.images.venue;
-  // Final lines
-  $("#finalLines").innerHTML = s.finalLines.map(function (line) {
-    return "<p>" + line + "</p>";
-  }).join("");
 
-  document.title = cfg.groomName + " & " + cfg.brideName + " — Forever Begins Here";
+  document.title = cfg.groomName + " & " + cfg.brideName + " — Wedding";
 
   // Music
-  $("#bgMusic").src = cfg.music.src;
+  if (cfg.music.src) $("#bgMusic").src = cfg.music.src;
 }

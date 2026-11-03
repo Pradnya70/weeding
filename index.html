@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vaibhav &amp; Pradnya — Forever Begins Here</title>
-<meta name="description" content="The story of Vaibhav and Pradnya — from an arranged introduction to a beautiful YES.">
+<title>Vaibhav &amp; Pradnya — Wedding</title>
+<meta name="description" content="Vaibhav and Pradnya are getting married on 29th November 2026 at Sonai Palace Function Hall, Ahmedpur.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +50,7 @@
     <span></span><span></span><span></span>
   </button>
   <div class="nav-links" id="navLinks">
-    <a href="#teaser">Teaser</a>
+    <a href="#teaser">Reels</a>
     <a href="#our-story">Our Story</a>
     <a href="#story-timeline">Timeline</a>
     <a href="#wedding-events">Wedding</a>
@@ -64,75 +64,44 @@
   <div class="hero-media">
     <img class="hero-photo" id="heroPhoto" src="assets/hero-couple.jpg" alt="Vaibhav and Pradnya">
     <div class="photo-fallback hero-fallback" id="heroFallback">
-      <div class="fallback-monogram">A <span>&amp;</span> I</div>
+      <div class="fallback-monogram">V <span>&amp;</span> P</div>
     </div>
     <div class="hero-gradient"></div>
   </div>
   <div class="hero-content reveal-up">
-    <p class="eyebrow">Together Forever</p>
+    <p class="eyebrow">We&#39;re Getting Married</p>
     <h1 class="hero-names"><span id="heroGroomName">Vaibhav</span> <span class="amp">&amp;</span> <span id="heroBrideName">Pradnya</span></h1>
     <p class="hero-tagline" id="heroTagline">Two families. Two journeys. One beautiful beginning.</p>
     <p class="hero-date" id="heroDate">12th December 2026</p>
   </div>
-  <a href="#our-story" class="scroll-cue" aria-label="Scroll to discover our story">
-    <span>Scroll to discover our story</span>
+  <a href="#our-story" class="scroll-cue" aria-label="Scroll down">
     <span class="scroll-arrow">↓</span>
   </a>
 </header>
 
 <main>
 
-<!-- ================= WEDDING TEASER REEL ================= -->
+<!-- ================= PRE-WEDDING REELS ================= -->
 <section class="section reel-section" id="teaser">
-  <div class="container narrow center">
+  <div class="container center">
     <p class="section-kicker reveal-up">A Glimpse of Forever</p>
-    <h2 class="section-heading serif reveal-up">Our Wedding Teaser</h2>
-    <div class="reel-frame">
-      <video class="reel-video" id="reelVideo" muted autoplay loop playsinline preload="auto" aria-label="Wedding teaser video"></video>
-      <button class="reel-sound" id="reelSound" type="button" aria-pressed="false">🔇 Tap for sound</button>
-    </div>
-    <p class="reel-tag reveal-up">Coming soon to forever…</p>
+    <h2 class="section-heading serif reveal-up">Our Pre-Wedding Reels</h2>
+    <!-- reels are built from cfg.reels in js/reel.js -->
+    <div class="reel-row" id="reelRow"></div>
   </div>
 </section>
 
 <!-- ================= SECTION 1 — INTRO ================= -->
 <section class="section intro-section" id="our-story">
   <div class="container narrow">
-    <p class="section-kicker reveal-up">A Pure Arranged Marriage Story</p>
+    <p class="section-kicker reveal-up">Our Story</p>
     <h2 class="section-heading serif reveal-up" id="introHeading">Some Stories Begin With Love.<br>Ours Began With a Simple Introduction.</h2>
     <p class="section-text reveal-up" id="introText"></p>
-    <p class="intro-highlight reveal-up" id="introHighlight"></p>
 
     <figure class="intro-photo reveal-up">
       <img src="assets/arranged-marriage-wide.jpg" alt="Tuzh Majha - Aamcha Arrange Marriage" loading="lazy">
     </figure>
 
-    <div class="mini-timeline reveal-up">
-      <div class="mini-step">
-        <div class="mini-icon" data-icon="family"></div>
-        <span>Family</span>
-      </div>
-      <div class="mini-connector"></div>
-      <div class="mini-step">
-        <div class="mini-icon" data-icon="meeting"></div>
-        <span>Meeting</span>
-      </div>
-      <div class="mini-connector"></div>
-      <div class="mini-step">
-        <div class="mini-icon" data-icon="thought"></div>
-        <span>Understanding</span>
-      </div>
-      <div class="mini-connector"></div>
-      <div class="mini-step">
-        <div class="mini-icon" data-icon="decision"></div>
-        <span>Decision</span>
-      </div>
-      <div class="mini-connector"></div>
-      <div class="mini-step">
-        <div class="mini-icon" data-icon="heart"></div>
-        <span>Forever</span>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -146,10 +115,9 @@
       </div>
     </div>
     <div class="split-text reveal-right">
-      <p class="section-kicker">The First Step</p>
+      <p class="section-kicker">How It Began</p>
       <h2 class="section-heading serif">The First Step</h2>
       <p class="section-text" id="firstMeetingText"></p>
-      <p class="story-caption" id="firstMeetingCaption"></p>
     </div>
   </div>
 </section>
@@ -172,15 +140,8 @@
 
     <div class="profile-cards">
       <div class="profile-card reveal-left">
-        <div class="profile-photo-wrap">
-          <img class="profile-photo" id="groomPhoto" src="assets/groom.jpg" alt="Groom portrait">
-          <div class="photo-fallback profile-fallback" id="groomFallback">
-            <div class="fallback-icon" data-icon="groom"></div>
-          </div>
-        </div>
         <h3 class="profile-name" id="groomCardName">Vaibhav</h3>
         <p class="profile-role" id="groomCardRole">SBI Circle Based Officer</p>
-        <p class="profile-about" id="groomCardAbout"></p>
       </div>
 
       <div class="profile-divider" aria-hidden="true">
@@ -188,15 +149,8 @@
       </div>
 
       <div class="profile-card reveal-right">
-        <div class="profile-photo-wrap">
-          <img class="profile-photo" id="bridePhoto" src="assets/bride.jpg" alt="Bride portrait">
-          <div class="photo-fallback profile-fallback" id="brideFallback">
-            <div class="fallback-icon" data-icon="bride"></div>
-          </div>
-        </div>
         <h3 class="profile-name" id="brideCardName">Pradnya</h3>
         <p class="profile-role" id="brideCardRole">Software Developer</p>
-        <p class="profile-about" id="brideCardAbout"></p>
       </div>
     </div>
   </div>
@@ -214,17 +168,11 @@
 <!-- ================= SECTION 8 — THE WEDDING ================= -->
 <section class="section wedding-section dark-section" id="wedding-events">
   <div class="container narrow center">
-    <p class="section-kicker light reveal-up">Now, The Wait Is Over</p>
+    <p class="section-kicker light reveal-up">Save the Date</p>
     <h2 class="section-heading serif light reveal-up">
       <span id="weddingNames">Vaibhav &amp; Pradnya</span>
     </h2>
-    <p class="section-subheading light reveal-up">Are getting married!</p>
-
-    <div class="wedding-meta reveal-up">
-      <div><span class="meta-label">Date</span><span class="meta-value" id="weddingDateText">12th December 2026</span></div>
-      <div><span class="meta-label">Venue</span><span class="meta-value" id="weddingVenueText">The Grand Regalia Banquets</span></div>
-      <div><span class="meta-label">Location</span><span class="meta-value" id="weddingLocationText">Pune, Maharashtra</span></div>
-    </div>
+    <p class="section-subheading light reveal-up">request the pleasure of your company</p>
 
     <div class="countdown reveal-up" id="countdown">
       <div class="countdown-box"><span class="cd-num" id="cdDays">00</span><span class="cd-label">Days</span></div>
@@ -233,14 +181,13 @@
       <div class="countdown-box"><span class="cd-num" id="cdSeconds">00</span><span class="cd-label">Seconds</span></div>
     </div>
 
-    <div class="venue-media reveal-up">
-      <img class="venue-photo" id="venuePhoto" src="assets/venue.svg" alt="Wedding venue">
-      <div class="photo-fallback venue-fallback" id="venueFallback">
-        <div class="fallback-icon" data-icon="venue"></div>
-      </div>
+    <div class="venue-card reveal-up">
+      <div class="venue-icon" data-icon="venue"></div>
+      <p class="venue-label">The Venue</p>
+      <h3 class="venue-name" id="venueName">Sonai Palace Function Hall</h3>
+      <p class="venue-address" id="venueAddress">Ahmedpur, Maharashtra 413515</p>
+      <a class="btn btn-outline-light" id="mapsBtn" href="#" target="_blank" rel="noopener">View on Google Maps</a>
     </div>
-
-    <a class="btn btn-outline-light reveal-up" id="mapsBtn" href="#" target="_blank" rel="noopener">View on Google Maps</a>
 
     <div class="event-cards reveal-up" id="eventCards"></div>
   </div>
@@ -251,10 +198,7 @@
   <div class="container">
     <p class="section-kicker center reveal-up">A Few Frames</p>
     <h2 class="section-heading serif center reveal-up">Photo Gallery</h2>
-    <p class="gallery-script reveal-up">Moments we'll treasure forever</p>
-    <div class="heart-divider reveal-up" aria-hidden="true"><span></span><i>&#10084;</i><span></span></div>
 
-    <div class="gallery-filters reveal-up" id="galleryFilters"></div>
     <div class="gallery-grid" id="galleryGrid"></div>
   </div>
 </section>
@@ -291,14 +235,14 @@
         <label>Will you attend?</label>
         <div class="attend-toggle">
           <input type="radio" id="attendYes" name="attending" value="yes" checked>
-          <label for="attendYes" class="toggle-pill toggle-yes">Yes, I'll Be There ❤️</label>
+          <label for="attendYes" class="toggle-pill toggle-yes">Joyfully Accept</label>
           <input type="radio" id="attendNo" name="attending" value="no">
-          <label for="attendNo" class="toggle-pill toggle-no">Sorry, I Can't Attend</label>
+          <label for="attendNo" class="toggle-pill toggle-no">Regretfully Decline</label>
         </div>
       </div>
       <div class="form-row">
         <label for="rsvpMessage">Message</label>
-        <textarea id="rsvpMessage" name="message" rows="3" placeholder="Leave a warm wish for the couple..."></textarea>
+        <textarea id="rsvpMessage" name="message" rows="3" placeholder="Your wishes for the couple (optional)"></textarea>
       </div>
       <button type="submit" class="btn btn-primary rsvp-submit">Send RSVP</button>
       <p class="rsvp-success" id="rsvpSuccess" role="status" aria-live="polite"></p>
@@ -311,14 +255,13 @@
   <div class="hero-media">
     <img class="final-photo" id="finalPhoto" src="assets/hero-couple.jpg" alt="Vaibhav and Pradnya">
     <div class="photo-fallback hero-fallback" id="finalFallback">
-      <div class="fallback-monogram">A <span>&amp;</span> I</div>
+      <div class="fallback-monogram">V <span>&amp;</span> P</div>
     </div>
     <div class="final-gradient"></div>
   </div>
   <div class="container narrow center final-content">
-    <div class="final-lines" id="finalLines"></div>
     <h2 class="final-couple-name serif" id="finalCoupleName">Vaibhav <span class="heart-inline">♥</span> Pradnya</h2>
-    <p class="final-tag">Forever starts here.</p>
+    <p class="final-tag">We look forward to celebrating with you.</p>
     <p class="final-date" id="finalDate">12th December 2026</p>
   </div>
 </section>
@@ -326,7 +269,7 @@
 </main>
 
 <footer class="site-footer">
-  <p>Made with love for <span id="footerNames">Vaibhav &amp; Pradnya</span> — <span id="footerDate">12th December 2026</span></p>
+  <p><span id="footerNames">Vaibhav &amp; Pradnya</span> — <span id="footerDate">12th December 2026</span></p>
 </footer>
 
 <script src="js/config.js"></script>
