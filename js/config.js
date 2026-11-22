@@ -121,15 +121,16 @@ var WEDDING_CONFIG = {
     { src: "assets/wedding-trailer.mp4", title: "Wedding Teaser" },
     { src: "assets/reel-cafe.mp4", title: "Coffee Date" },
     // wide: true = landscape film, shown full-width with normal video controls
-    { src: "assets/film-pune-city.mp4", title: "Pune Diaries — A Walk Through the City's Iconic Spots", wide: true, poster: "assets/film-pune-city-poster.jpg" }
+    { src: "assets/film-pune-city.mp4", title: "Pune Diaries — A Walk Through the City's Iconic Spots", wide: true, poster: "assets/film-pune-city-poster.jpg" },
+    { src: "assets/film-tshirt.mp4", title: "Twinning in Maroon — Our T-Shirt Story", wide: true, poster: "assets/film-tshirt-poster.jpg" }
   ],
 
   // ---------------------------------------------------------------
   // RSVP
   // ---------------------------------------------------------------
   rsvp: {
-    // Optional: a Formspree / backend endpoint. Leave empty to store
-    // responses locally in the browser only (no server required).
+    // Google Apps Script web app URL (ends in /exec) — see
+    // tools/rsvp-google-sheet.gs. Empty = responses are NOT sent anywhere.
     endpoint: ""
   }
 };

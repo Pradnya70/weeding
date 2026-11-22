@@ -72,17 +72,28 @@ function wireReel() {
     setLabel(video, btn);
   });
 
-  // Only play reels while they're visible, to save data and battery.
+  // Short reels autoplay while visible; long films show their cover and
+  // wait for the guest to press play. Everything pauses when scrolled away.
   var videos = $all("video", row);
+  var isFilm = function (v) { return !!v.closest(".reel-wide"); };
   if ("IntersectionObserver" in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
-        if (e.isIntersecting) e.target.play().catch(function () {});
-        else e.target.pause();
+        if (!e.isIntersecting) e.target.pause();
+        else if (!isFilm(e.target)) e.target.play().catch(function () {});
       });
     }, { threshold: 0.4 });
     videos.forEach(function (v) { io.observe(v); });
   } else {
-    videos.forEach(function (v) { v.play().catch(function () {}); });
+    videos.forEach(function (v) { if (!isFilm(v)) v.play().catch(function () {}); });
   }
+
+  // Playing one film pauses the other films.
+  $all(".reel-wide video", row).forEach(function (film) {
+    film.addEventListener("play", function () {
+      $all(".reel-wide video", row).forEach(function (other) {
+        if (other !== film) other.pause();
+      });
+    });
+  });
 }
