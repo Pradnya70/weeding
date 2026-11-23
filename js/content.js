@@ -26,13 +26,6 @@ function populateContent() {
   $("#yesBig").childNodes[0].nodeValue = s.yesBigText + " ";
   $("#yesSubheading").textContent = s.yesSubheading;
 
-  // Careers
-  $("#careersHeading").innerHTML = s.careersHeading;
-  $("#groomCardName").textContent = cfg.groomName;
-  $("#groomCardRole").textContent = cfg.groomProfession;
-  $("#brideCardName").textContent = cfg.brideName;
-  $("#brideCardRole").textContent = cfg.brideProfession;
-
   // Wedding section
   $("#weddingNames").textContent = cfg.groomName + " & " + cfg.brideName;
   $("#venueName").textContent = cfg.venueName;

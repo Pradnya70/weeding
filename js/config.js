@@ -76,9 +76,8 @@ var WEDDING_CONFIG = {
 
     yesHeading: "And Then Came the Answer",
     yesBigText: "YES",
-    yesSubheading: "After two family visits, Pradnya said yes, and the marriage was formally fixed soon after.",
+    yesSubheading: "After two family visits, Pradnya said yes, and the marriage was formally fixed soon after."
 
-    careersHeading: "The Couple"
   },
 
   // ---------------------------------------------------------------
@@ -101,7 +100,45 @@ var WEDDING_CONFIG = {
     // Only photos not already shown elsewhere on the page.
     // Add more as { src: "assets/your-photo.jpg", category: "Moments" }
     gallery: [
-      { src: "assets/gallery-01.jpg", category: "Moments" }
+      { src: "assets/gallery/pw-01448.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-01935.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02360.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02486.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02174.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02755.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery-01.jpg", category: "Moments" },
+      { src: "assets/gallery/pw-01492.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-01962.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02428.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02505.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02228.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02762.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-01547.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-01966.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02450.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02535.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02266.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02802.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-01569.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-01968.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02452.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02549.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02270.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02859.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-01579.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02031.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02456.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02556.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-01737.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02034.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02459.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02631.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-01771.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02075.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02475.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02703.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-01876.jpg", category: "Pre-Wedding" },
+      { src: "assets/gallery/pw-02704.jpg", category: "Pre-Wedding" }
     ]
   },
 

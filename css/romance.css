@@ -11,27 +11,26 @@
 .btn-primary { background: var(--maroon); color: var(--ivory); box-shadow: none; }
 .btn-primary:hover { background: var(--maroon-deep); box-shadow: 0 10px 28px rgba(74, 13, 24, 0.25); }
 
-/* gallery: clean, even, centred row (works for 1 photo or many) */
+/* gallery: masonry columns so portrait and landscape photos show uncropped */
 .gallery-grid {
-  columns: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
+  display: block;
+  columns: 3 280px;
+  column-gap: 18px;
   margin-top: 56px;
 }
 .gallery-item,
 .gallery-item:nth-child(3n+1) {
-  flex: 0 1 calc(25% - 18px);
-  min-width: 240px;
-  aspect-ratio: 4 / 5;
-  margin: 0;
+  break-inside: avoid;
+  aspect-ratio: auto;
+  margin: 0 0 18px;
   border-radius: 8px;
   box-shadow: var(--shadow-soft);
 }
+.gallery-item img { height: auto; }
 .gallery-item:hover img { transform: scale(1.04); }
 @media (max-width: 720px) {
-  .gallery-item, .gallery-item:nth-child(3n+1) { flex-basis: 100%; min-width: 0; max-width: 420px; }
+  .gallery-grid { columns: 2; column-gap: 10px; }
+  .gallery-item, .gallery-item:nth-child(3n+1) { margin-bottom: 10px; }
 }
 
 /* ---------- spacing: generous, consistent rhythm ---------- */
@@ -109,3 +108,8 @@
 /* the yes: understated */
 .yes-big { font-size: clamp(3rem, 10vw, 5.5rem); text-shadow: none; margin: 12px 0 20px; letter-spacing: 8px; }
 .yes-heart { display: none; }
+
+/* wedding banner (replaces 'The Couple'): full-width image */
+.wedding-banner { padding: 40px 0; line-height: 0; text-align: center; }
+/* shown at its own size (1280px) and never enlarged, so it stays sharp */
+.wedding-banner img { width: 100%; max-width: 720px; height: auto; display: inline-block; border-radius: 10px; box-shadow: var(--shadow-soft); }
