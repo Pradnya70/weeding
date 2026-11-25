@@ -159,7 +159,8 @@ var WEDDING_CONFIG = {
     { src: "assets/reel-cafe.mp4", title: "Coffee Date" },
     // wide: true = landscape film, shown full-width with normal video controls
     { src: "assets/film-pune-city.mp4", title: "Pune Diaries — A Walk Through the City's Iconic Spots", wide: true, poster: "assets/film-pune-city-poster.jpg" },
-    { src: "assets/film-tshirt.mp4", title: "Twinning in Maroon — Our T-Shirt Story", wide: true, poster: "assets/film-tshirt-poster.jpg" }
+    { src: "assets/film-tshirt.mp4", title: "Twinning in Maroon — Our T-Shirt Story", wide: true, poster: "assets/film-tshirt-poster.jpg" },
+    { src: "assets/film-temple.mp4", title: "In White & Grace — Our Temple Story", wide: true, poster: "assets/film-temple-poster.jpg" }
   ],
 
   // ---------------------------------------------------------------
